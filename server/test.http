@@ -1,0 +1,69 @@
+
+###  Testing the application
+GET https://localhost:3000/api HTTP/1.1
+
+
+### Create a new user - shivani
+POST https://localhost:3000/api/users/signup HTTP/1.1
+content-Type: application/json
+
+{
+    "username": "shivani",
+    "password": "password2023"
+}
+
+
+### log into account - shivani
+POST https://localhost:3000/api/users/login HTTP/1.1
+content-Type: application/json
+
+{
+    "username": "shivani",
+    "password": "password2023"
+}
+
+
+### View all posts (get all posts)
+GET https://localhost:3000/api/characters HTTP/1.1
+
+
+### Create a new post - Simon Riley
+POST https://localhost:3000/api/characters HTTP/1.1
+content-Type: application/json
+
+{
+    "id": "5",
+    "name": "Simon Riley"
+}
+
+
+### Create a new post - Konig
+POST https://localhost:3000/api/characters HTTP/1.1
+content-Type: application/json
+
+{
+    "id": "6",
+    "name": "Konig"
+}
+
+
+### Create a new post - Captain Price
+POST https://localhost:3000/api/characters HTTP/1.1
+content-Type: application/json
+
+{
+    "id": "7",
+    "name": "Captain Price"
+}
+
+
+### Delete a post - Simon Riley 
+DELETE https://localhost:3000/api/characters/6526a003800c55609817890c HTTP/1.1
+content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3Q5IiwidXNlcmlkIjoiNjM0NTFhMDQyMDE4YmIwY2JjOGIwNGNhIiwiaWF0IjoxNjY1NDczMDY2LCJleHAiOjE2NjU0NzY2NjZ9.FpGxz2CC2koE4PopXTG-qk_Kz93EjLBFBJL0qoWtu60
+
+
+
+
+
+
